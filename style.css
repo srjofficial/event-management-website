@@ -1,0 +1,117 @@
+@media only screen and (min-width: 768px){
+    .parent:hover .child {
+        opacity:1;
+        height:auto;
+        overflow:none;
+        transform: translateY(0);
+        
+    }
+    .child {
+        opacity:0;
+        height:0;
+        overflow:hidden;
+        transform: translateY(-10%);
+        
+    }
+}
+/* cdn fonts */
+@import url('https://fonts.cdnfonts.com/css/romance-fatal-serif');
+@import url('https://fonts.cdnfonts.com/css/bartex');
+@import url('https://fonts.cdnfonts.com/css/titillium');
+
+*{
+    font-family: 'Titillium', sans-serif;
+}
+.nav 
+{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    background-color: #FFEFEF;
+}
+.navcon{
+    background-color: #FFEFEF;
+}
+/* nav button  */
+
+/* animation */
+.corouselhead
+{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 70;
+    color: whitesmoke;
+    font-weight: 500;   
+  
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+       
+}
+@keyframes moveup
+{
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+}
+/* animation */
+.corouselhead_p
+{
+    color: #FABC3F;
+    font-family: "Oswald", sans-serif;
+}
+.corouselhead_h
+{
+    font-family: 'Romance Fatal Serif', sans-serif;
+}
+.corouselhead_socialmedia
+{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    z-index: 70;
+    display: flex;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+/* animation for text add class "textanim" */
+@keyframes appear {
+    from {
+      opacity: 0;
+      clip-path: inset(100% 100% 0 0);
+    }
+    to {
+      opacity: 1;
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  .textanim {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+/* animation for text add class "textanim" */
+footer
+{
+   
+    padding-bottom: 50px;
+}
+.footcon
+{
+    
+}
+.footerimage
+{
+    width: 70%;
+    position: relative;
+    top: 10%;
+    left: 38%;
+    padding-bottom: 50px;
+}
